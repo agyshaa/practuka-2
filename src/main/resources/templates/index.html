@@ -88,6 +88,7 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h1 th:text="${title}" class="card-title"></h1>
+                            <h1 th:text="${books}" class="card-title"></h1>
                             <p th:text="${publishing}" class="card-text text-primary"></p>
                             <p th:text="${year}" class="card-text text-primary"></p>
                             <p th:text="${genre}" class="card-text text-primary"></p>
@@ -98,68 +99,69 @@
                 </div>
                 <div class="card-footer bg-light">
                     <p th:text="${description}" class="card-text"
-                        Бортпровідниця Стіві починає працювати на приватному літаку хокейної команди із Чикаго, і відтоді її життя змінюється.
+                       Бортпровідниця Стіві починає працювати на приватному літаку хокейної команди із Чикаго, і відтоді її життя
+                       змінюється.
                     ></p>
                 </div>
             </div>
 
-            <!-- Друга форма -->
-            <div class="card mb-4 border border-danger" style="position: relative;">
-                <button type="button" class="btn btn-default btn-sm" style="position: absolute; top: 10px; right: 10px;">
-                    <span class="glyphicon glyphicon-remove"></span>
-                </button>
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img th:src="@{images/two.jpg}" class="img-thumbnail" alt="Картинка">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h1 class="card-title">Через гріх я воскресаю</h1>
-                            <p class="card-text text-danger">Ким кидана: Видавництво "КСД"</p>
-                            <p class="card-text text-danger">Рік: 2024</p>
-                            <p class="card-text text-danger">Жанр: Романтична проза</p>
-                            <p class="card-text"><small class="text-muted">Автор: Кора Рейли</small></p>
-                            <p class="card-text"><small class="text-muted">Кількість переглядів: 15</small></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer bg-light">
-                    <p class="card-text">
-                        У дитинстві Меддокс став свідком того, як його батька вбила мафія. З тих пір хлопця виховував дядько,
-                        власник престижного мотоклубу. Подорослішавши, хлопець ставить перед собою мету - зруйнувати імперію
-                        мафіозі Луки Вітіелло, який забрав у нього дитинство.
-                    </p>
-                </div>
-            </div>
+<!--            &lt;!&ndash; Друга форма &ndash;&gt;-->
+<!--            <div class="card mb-4 border border-danger" style="position: relative;">-->
+<!--                <button type="button" class="btn btn-default btn-sm" style="position: absolute; top: 10px; right: 10px;">-->
+<!--                    <span class="glyphicon glyphicon-remove"></span>-->
+<!--                </button>-->
+<!--                <div class="row g-0">-->
+<!--                    <div class="col-md-4">-->
+<!--                        <img th:src="@{images/two.jpg}" class="img-thumbnail" alt="Картинка">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-8">-->
+<!--                        <div class="card-body">-->
+<!--                            <h1 class="card-title">Через гріх я воскресаю</h1>-->
+<!--                            <p class="card-text text-danger">Ким кидана: Видавництво "КСД"</p>-->
+<!--                            <p class="card-text text-danger">Рік: 2024</p>-->
+<!--                            <p class="card-text text-danger">Жанр: Романтична проза</p>-->
+<!--                            <p class="card-text"><small class="text-muted">Автор: Кора Рейли</small></p>-->
+<!--                            <p class="card-text"><small class="text-muted">Кількість переглядів: 15</small></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="card-footer bg-light">-->
+<!--                    <p class="card-text">-->
+<!--                        У дитинстві Меддокс став свідком того, як його батька вбила мафія. З тих пір хлопця виховував дядько,-->
+<!--                        власник престижного мотоклубу. Подорослішавши, хлопець ставить перед собою мету - зруйнувати імперію-->
+<!--                        мафіозі Луки Вітіелло, який забрав у нього дитинство.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <!-- Третя форма -->
-            <div class="card mb-4 border border-success"  style="position: relative;">
-                <!-- Хрестик у верхньому правому куті -->
-                <button type="button" class="btn btn-default btn-sm" style="position: absolute; top: 10px; right: 10px;">
-                    <span class="glyphicon glyphicon-remove"></span>
-                </button>
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img th:src="@{images/three.jpg}" class="img-thumbnail" alt="Картинка">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h1 class="card-title">Бійцівська рибка</h1>
-                            <p class="card-text text-success">Ким видана: Видавництво "Прем'єра"</p>
-                            <p class="card-text text-success">Рік: 2023</p>
-                            <p class="card-text text-success">Жанр: Драма</p>
-                            <p class="card-text"><small class="text-muted">Автор: Сьюзен Елоіза Хінтон</small></p>
-                            <p class="card-text"><small class="text-muted">Кількість переглядів: 20</small></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer bg-light">
-                    <p class="card-text">
-                        Расті-Джеймс - найкрутіший учень у школі, і він це знає. Попри те, що хлопець пишається власною репутацією серед однолітків, еталоном для нього є старший брат, на прізвисько Мотоцикліст. Брат завжди підтримає, підставить плече і допоможе вибратися з будь-яких негараздів.
-                    </p>
-                </div>
-            </div>
-        </div>
+<!--            &lt;!&ndash; Третя форма &ndash;&gt;-->
+<!--            <div class="card mb-4 border border-success"  style="position: relative;">-->
+<!--                &lt;!&ndash; Хрестик у верхньому правому куті &ndash;&gt;-->
+<!--                <button type="button" class="btn btn-default btn-sm" style="position: absolute; top: 10px; right: 10px;">-->
+<!--                    <span class="glyphicon glyphicon-remove"></span>-->
+<!--                </button>-->
+<!--                <div class="row g-0">-->
+<!--                    <div class="col-md-4">-->
+<!--                        <img th:src="@{images/three.jpg}" class="img-thumbnail" alt="Картинка">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-8">-->
+<!--                        <div class="card-body">-->
+<!--                            <h1 class="card-title">Бійцівська рибка</h1>-->
+<!--                            <p class="card-text text-success">Ким видана: Видавництво "Прем'єра"</p>-->
+<!--                            <p class="card-text text-success">Рік: 2023</p>-->
+<!--                            <p class="card-text text-success">Жанр: Драма</p>-->
+<!--                            <p class="card-text"><small class="text-muted">Автор: Сьюзен Елоіза Хінтон</small></p>-->
+<!--                            <p class="card-text"><small class="text-muted">Кількість переглядів: 20</small></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="card-footer bg-light">-->
+<!--                    <p class="card-text">-->
+<!--                        Расті-Джеймс - найкрутіший учень у школі, і він це знає. Попри те, що хлопець пишається власною репутацією серед однолітків, еталоном для нього є старший брат, на прізвисько Мотоцикліст. Брат завжди підтримає, підставить плече і допоможе вибратися з будь-яких негараздів.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
         <div class="col-sm-2 sidenav">
             <div class="well">
